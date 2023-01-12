@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.I</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Osztályfőnökünk</a></li>
+                <li><a href="#services">Tudásunk</a></li>
+                <li><a href="#portfolio">Betekintő</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1><span>PG</span><br>10.I</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Kiss Gábor.jpg">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">Kiss Gábor Osztályfőnökünk és egyben programozás és ikt projektmunka tanárunk is. <br>Egy igazi utazó az világ számos helyén járt már  <br> </h1>
+              <h2>Osztálynévsor:</h2>
+            <p>
+                1. Andrási Martin
+                2. Bódi Levente
+                3. Bozó Mihály Barnabás
+                4. Butty Máté László
+                5. Czakó Zoltán
+                6. Csenki Gergely
+                7. Fehér Tibor
+                8. Fesető Imre
+                9. Fülöp Miklós János
+                10. Gál Bettina
+                11. Gazdik Gergely György
+                12. Gubek-Szabó Tamás
+                13. Kanyó Szabolcs
+                14. Kele Márton Róbert
+                15. Kerekes Csaba
+                16. Király Bence Viktor
+                17. Kis Dominik
+                18. Kocsis Áron László
+                19. Magyar Márk
+                20. Mészáros Imre
+                21. Molnár Károly
+                22. Nagy Levéd Sámuel
+                23. Nógrádi Attila
+                24. Pásztor Richárd Attila
+                25. Polyák Gergő
+                26. Rideg Gergő Rómeó
+                27. Seres Dániel
+                28. Surányi Martin
+                29. Surányi Szabolcs
+                30. Szécsényi Árpád Attila
+                31. Takács Sebestyén
+                32. Tóth Ákos
+                33. Tóth Soma Zsombor
+                34. Tóth Tamás
+                35. Varga Levente
+                36. Vízhányó Zsombor</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Osztály Tudása</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Weboldal szerkesztés</h2>
+                <p>HTML és CSS weboldal szerkesztés tanultunk/tanulunk</p>
+                <a href="#">Coming soon....</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Pyton</h2>
+                <p>Pyton nyelvel alap műveletek és programok megírása</p>
+                <a href="#">Coming soon....</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Hálózat</h2>
+                <p>Packet Tracer alap szintű használata</p>
+                <a href="#">Coming soon....</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">3 kis betekintő kép</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/vizes.jpg">
+                <div class="layer">
+                    <h3>Zsomborunk</h3>
+                    <p>A legnagyobb védő ahogy látják is</p>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/imre.jpg">
+                <div class="layer">
+                    <h3>Imre</h3>
+                    <p>Egy Igazi vérbeli bűnöző letartóztatása</p>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/butty.jpg">
+                <div class="layer">
+                    <h3>Butty</h3>
+                    <p>Éppen megpihenés közben el kaptuk az öreget</p>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">A többi coming soon....</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Vedd fel velünk a kapcsolatot ha tetszik</h1>
+                <p><i class="fas fa-paper-plane"></i> kapcsolat@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 06706697706</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Neved" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="üzenet"></textarea>
+                    <button type="submit" class="btn btn2">Elfogad</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="asd">
+ 
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
